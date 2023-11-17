@@ -6,7 +6,8 @@ import { PortifolioComponent } from './pages/portifolio/portifolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent},
   { path:'portifolio', component: PortifolioComponent},
   { path:'about-me', component: AboutMeComponent},
   { path:'contact', component: ContactComponent}

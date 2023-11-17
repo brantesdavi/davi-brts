@@ -1,12 +1,20 @@
 <div class="block" style="width: 100%">
-  <div class="mb-60">
+  <div class="mb-10">
     <div class="text-3xl inline-block max-w-max md:whitespace-nowrap">Davi Brantes</div>
     <div class="text-base text-gray-600">Developer & Illustrator</div>
   </div>
-  <div>
-    <div>.</div>
-    <div>Portifolio</div>
-    <div>About Me</div>
-    <div>Contact</div>
+  <div class="navbar grid grid-columns-4">
+    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      {{ isActive('/home') ? '.' : 'Home' }}
+    </a>
+    <a routerLink="/portifolio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      {{ isActive('/portifolio') ? '.' : 'Portifolio' }}
+    </a>
+    <a routerLink="/about-me" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      {{ isActive('/about-me') ? '.' : 'About Me' }}
+    </a>
+    <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      {{ isActive('/contact') ? '.' : 'Contact' }}
+    </a>
   </div>
 </div>
