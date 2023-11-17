@@ -10,6 +10,9 @@ import { AboutMeComponent } from './about-me.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    AboutMeComponent
   ]
 })
 export class AboutMeModule { }

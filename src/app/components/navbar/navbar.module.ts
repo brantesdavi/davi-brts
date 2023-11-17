@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PortifolioComponent } from './portifolio.component';
+import { NavbarComponent } from './navbar.component';
 
 
 
 @NgModule({
   declarations: [
-    PortifolioComponent
+    NavbarComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    PortifolioComponent
+    NavbarComponent
   ]
 })
-export class PortifolioModule { }
+export class NavbarModule { }

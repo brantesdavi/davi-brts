@@ -22,6 +22,9 @@ module.exports = {
       screens:{
         'xs': '415px',
       },
+      whitespace: {
+        nowrap: 'nowrap'
+      }
     },
   plugins: [],
   }

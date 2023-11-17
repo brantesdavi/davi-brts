@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PortifolioComponent } from './portifolio.component';
+import { ContactComponent } from './contact.component';
 
 
 
 @NgModule({
   declarations: [
-    PortifolioComponent
+    ContactComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    PortifolioComponent
+    ContactComponent
   ]
 })
-export class PortifolioModule { }
+export class ContactModule { }
