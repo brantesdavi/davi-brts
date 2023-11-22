@@ -10,7 +10,6 @@ export class XpInfoComponent implements OnInit {
   @Input() jobInfo: any;
 
   ngOnInit(): void {
-    console.log(this.jobInfo)
   }
 
 

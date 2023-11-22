@@ -1,15 +1,50 @@
 
 <div class="h-full flex justify-end items-end">
-  <div class="text-end" style="height: 500px; width: 100%; overflow-y: scroll; overflow-x: hidden; padding-right: 16px;">
+  <div class="text-end" style="height: 90%; width: 90%; overflow-y: scroll; overflow-x: hidden; padding-right: 16px;">
     <div>
-      I am a Full-stack developer specialized in Front-end based in São Paulo, BR
+      I am a Full-stack developer specialized in Front-end, focused on creating screens with interesting and accessible designs, based in São Paulo, Brazil
     </div>
-    <a class="text-sm">View Full Résumé</a>
+    <div class="grid grid-collumns-1 lg:flex lg:justify-end gap-x-3 gap-y-3 mt-2">
+      <div class="flex justify-end">
+        <a class="text-sm border-b" href="../../../assets/pdf/cv_davibrantes.pdf"  target="_blank">View Full Résumé</a>
+      </div>
+      <div class="flex justify-end">
+        <button (click)="sendEmail()" class="border border-white transition duration-350 hover:bg-white hover:text-black px-2 text-sm">Contact Me</button>
+      </div>
+    </div>
+    <div class="mt-4 text-sm">
+      <span class="text-xl font-bold">Main Skills</span>
+      <div class="mt-1 flex justify-end">
+        > Typescript > Angular > UX/UI
+      </div>
+      <div class="flex justify-end">
+        >Javascript  > ASP.NET Core > SQL
+      </div>
+    </div>
     <div class="mt-4">
-      <span class="text-xl">Experience</span>
+      <span class="text-xl font-bold">Experience</span>
       <div class="mt-3">
-        <div *ngFor="let job of experienceList">
+        <div *ngFor="let job of experienceList.slice(0, showAllJobs ? experienceList.length : maxJobs)">
           <app-xp-info [jobInfo]="job"></app-xp-info>
+        </div>
+        <div class="flex justify-end mt-4">
+          <button id="moreJobs" class="border border-white transition duration-350 hover:bg-white hover:text-black px-4 text-sm" (click)="showJobs()">
+            {{ showAllJobs ? 'Show Less' : 'Show More' }}
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <div class="mt-4">
+      <span class="text-xl">Education</span>
+      <div class="mt-3">
+        <div *ngFor="let education of educationList.slice(0, showAllEducation ? educationList.length : maxEducation)">
+          <app-ed-info [educationInfo]="education"></app-ed-info>
+        </div>
+        <div class="flex justify-end mt-4">
+          <button id="moreJobs" class="border border-white transition duration-350 hover:bg-white hover:text-black px-4 text-sm" (click)="showEducation()">
+            {{ showAllEducation ? 'Show Less' : 'Show More' }}
+          </button>
         </div>
       </div>
     </div>

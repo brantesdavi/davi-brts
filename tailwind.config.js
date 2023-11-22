@@ -26,7 +26,10 @@ module.exports = {
         nowrap: 'nowrap'
       },
       width: {
-        '300': '300px'
+        '400': '400px'
+      },
+      fontSize: {
+        '2xs': '10px'
       }
     },
   plugins: [],

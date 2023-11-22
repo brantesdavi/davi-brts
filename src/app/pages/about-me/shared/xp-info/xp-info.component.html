@@ -1,12 +1,12 @@
-<div class="">
-  <span class="text-lg">{{ jobInfo.ocupation }}</span>
-  <span class="block">@ {{ jobInfo.company }}</span>
-  <div class="text-sm whitespace-nowrap"> - nov / 2023</div>
+<div class="mb-2">
+  <span class="text-base lg:text-lg font-medium">{{ jobInfo.ocupation }}</span>
+  <span class="block text-sm lg:text-base">@ {{ jobInfo.company }}</span>
+  <div class="text-xs lg:text-base font-light whitespace-nowrap"> - nov / 2023</div>
   <div class="flex justify-end">
-    <div class="w-full sm:w-300 grid grid-cols-3 gap-2">
+    <div class="w-full sm:w-400 flex justify-end gap-2">
       <div *ngFor="let technology of jobInfo.technologies" class="mb-2">
-        <div class="border border-white px-2 whitespace-nowrap flex justify-center">
-          {{ technology }}
+        <div class="text-2xs lg:text-sm font-light text-inherit py-1 sm:py-0 whitespace-nowrap flex justify-center">
+          > {{ technology }}
         </div>
       </div>
     </div>
