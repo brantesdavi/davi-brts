@@ -1,0 +1,18 @@
+/* Estilização para navegadores WebKit (Chrome, Safari) */
+/* Altere as propriedades conforme desejado */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  border: 1px solid white; /* Adiciona uma borda branca de 1px */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

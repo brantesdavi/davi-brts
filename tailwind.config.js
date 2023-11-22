@@ -24,6 +24,9 @@ module.exports = {
       },
       whitespace: {
         nowrap: 'nowrap'
+      },
+      width: {
+        '300': '300px'
       }
     },
   plugins: [],
