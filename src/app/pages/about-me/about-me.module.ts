@@ -14,7 +14,8 @@ import { EdInfoModule } from './shared/ed-info/ed-info.module';
   imports: [
     CommonModule,
     XpInfoModule,
-    EdInfoModule
+    EdInfoModule,
+    TagModule
   ]
 })
 export class AboutMeModule { }

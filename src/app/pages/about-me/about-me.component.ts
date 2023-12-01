@@ -54,7 +54,7 @@ export class AboutMeComponent {
       startedDate: new Date(1/2/2020)
     },
     {
-      name: 'Systems Development',
+      name: 'IT',
       instituition: 'FIEC',
       place: 'Indaiatuba, São Paulo, Brazil',
       concluded: true,
